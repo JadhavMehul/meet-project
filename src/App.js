@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Navbar from "./Components/Navbar";
 import Home from "./Screens/Home";
+import InformationPage from "./Screens/InformationPage";
 import store, { rrfProps } from "./store";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/informationPage" component={InformationPage} />
             </Switch>
           </BrowserRouter>
         </ReactReduxFirebaseProvider>
